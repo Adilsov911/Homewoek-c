@@ -6,21 +6,37 @@ namespace homework
     {
         static void Main(string[] args)
         {
-            DocumentsProgram documentprogram = new DocumentsProgram();
-            ExpertDocumentProgram expertdocumentprogram = new ExpertDocumentProgram();
-            ProDocumentProgram prodocumentprogram = new ProDocumentProgram();
+            string type = "expertt";
+            if (type == "basic")
+            {
+                DocumentsProgram documentsProgram = new DocumentsProgram();
+                documentsProgram.OpenDocument();
+                documentsProgram.EditDocument();
+                documentsProgram.SaveDocument();
+            }
+            else if (type == "pro")
+            {
+                ProDocumentProgram prodocumentsProgram = new ProDocumentProgram();
 
-            //documentprogram.OpenDocument();
-            //documentprogram.EditDocument();
-            //documentprogram.SaveDocument();
+                prodocumentsProgram.OpenDocument();
+                prodocumentsProgram.EditDocument();
+                prodocumentsProgram.SaveDocument();
 
-            //expertdocumentprogram.SaveDocument();
-            //expertdocumentprogram.OpenDocument();
-            //expertdocumentprogram.EditDocument();
+            }
+            else if (type == "expert")
+            {
+                ExpertDocumentProgram expertDocumentsProgram = new ExpertDocumentProgram();
+                expertDocumentsProgram.OpenDocument();
+                expertDocumentsProgram.EditDocument();
+                expertDocumentsProgram.SaveDocument();           
+            }
+            else
+            {
+                Console.WriteLine("Keyword is not correkt");
+            }
+            
 
-            prodocumentprogram.OpenDocument();
-            prodocumentprogram.SaveDocument();
-            prodocumentprogram.EditDocument();
+            
 
         }
     }

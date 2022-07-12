@@ -9,13 +9,13 @@ namespace homework
     public class DocumentsProgram
     {
        public void OpenDocument()
-        {
+       {
             Console.WriteLine("Dociment Opened");
 
-        }
+       }
 
         public virtual void EditDocument()
-        {
+        {   
             Console.WriteLine("Can Edit in Pro and Expert version");
         }
 

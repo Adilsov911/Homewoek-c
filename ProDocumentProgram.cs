@@ -8,15 +8,15 @@ namespace homework
 {
     internal class ProDocumentProgram : DocumentsProgram
     {
-        public override void EditDocument()
-        {
-            Console.WriteLine("Dociment Edited");
-        }
+       public override void EditDocument()
+       {
+            Console.WriteLine("Document Can Edited");
+       }
         public override void SaveDocument()
         {
-            Console.WriteLine("Document Saved in doc format, for pdf format buy Expert packet");
+            Console.WriteLine("Document saved in doc format,Expert packet");
         }
-        
+
 
 
     }
